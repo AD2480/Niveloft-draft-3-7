@@ -1,0 +1,17 @@
+{
+  "name": "Niveloft",
+  "install": "cd Niveloft-Browser-Upload && node build.mjs install",
+  "terminals": [
+    {
+      "name": "frontend",
+      "description": "Vite dev server with in-browser mock API (demo mode)",
+      "command": "cd Niveloft-Browser-Upload/app-source/frontend && VITE_USE_MOCK_API=true npm run dev -- --host 0.0.0.0 --port 5174"
+    }
+  ],
+  "ports": [
+    {
+      "name": "frontend",
+      "port": 5174
+    }
+  ]
+}
